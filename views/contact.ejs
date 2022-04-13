@@ -1,0 +1,218 @@
+<%- include("partials/header") %> <%- include("partials/about-copy") %>
+<script>
+  document.getElementById("change-title").innerHTML = "Contact Us";
+  document.getElementById("change-breadcrumb").innerHTML = "Contact Us";
+</script>
+
+<section class="career-section contact-section">
+  <div class="container">
+    <div class="title-box">
+      <h2>Quick Contact</h2>
+      <div class="separator"></div>
+      <p>
+        You have questions? Dont hesitate to contact us, Our support team here
+        to <br />
+        help you by 24*7.
+      </p>
+    </div>
+
+    <div class="inner-container">
+      <div class="row">
+        <!--INFO-->
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="inner-column">
+            <div class="side-top-box">
+              <ul class="info-list">
+                <li>
+                  <div class="info-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info-content">
+                      <h3>Address:</h3>
+                      <p class="info-para">
+                        P.O.Box: 295747, Riyadh 11351, KSA
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="info-content">
+                      <h3>Mail Us:</h3>
+                      <p class="info-para">admin@uproksa.com</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="info-content">
+                      <h3>Office Hours:</h3>
+                      <p class="info-para">
+                        Monday - Saturday: 8:00AM to 6:00PM
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!--/INFO-->
+
+            <!-- CONTACT CAROUSEL -->
+            <section class="contact-carousel-section">
+              <div class="container">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <h3 class="contact-carousel-title">Abdul Rahman</h3>
+                    <h4 class="contact-carousel-occupation">
+                      Project Engineer
+                    </h4>
+
+                    <div class="carousel-email-box">
+                      <i class="fa-solid fa-envelope"></i>
+                      <div class="contact-carousel-email">
+                        admin@uproksa.com
+                      </div>
+                    </div>
+
+                    <div class="carousel-number-box">
+                      <i class="fa-solid fa-phone"></i>
+                      <div class="contact-carousel-number">
+                        +966 12 3456 789
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h3 class="contact-carousel-title">Abdul Rahman</h3>
+                    <h4 class="contact-carousel-occupation">
+                      Project Engineer
+                    </h4>
+
+                    <div class="carousel-email-box">
+                      <i class="fa-solid fa-envelope"></i>
+                      <div class="contact-carousel-email">
+                        admin@uproksa.com
+                      </div>
+                    </div>
+
+                    <div class="carousel-number-box">
+                      <i class="fa-solid fa-phone"></i>
+                      <div class="contact-carousel-number">
+                        +966 12 3456 789
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <h3 class="contact-carousel-title">Abdul Rahman</h3>
+                    <h4 class="contact-carousel-occupation">
+                      Project Engineer
+                    </h4>
+
+                    <div class="carousel-email-box">
+                      <i class="fa-solid fa-envelope"></i>
+                      <div class="contact-carousel-email">
+                        admin@uproksa.com
+                      </div>
+                    </div>
+
+                    <div class="carousel-number-box">
+                      <i class="fa-solid fa-phone"></i>
+                      <div class="contact-carousel-number">
+                        +966 12 3456 789
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /CONTACT CAROUSEL -->
+          </div>
+        </div>
+
+        <!--Form Column-->
+        <div class="form-column col-xs-12 col-sm-12 col-md-8 p-5 ps-4">
+          <div class="inner-column">
+            <!-- Contact Form -->
+            <div class="career-form contact-form">
+              <!--Default Form-->
+              <form method="post" action="mailto:admin@uproksa.com" id="contact-form">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 form-group">
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                    <input
+                    id="from-email"
+                      type="email"
+                      name="email"
+                      placeholder="E-Mail"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                    <input
+                      id="phone"
+                      type="text"
+                      name="phone"
+                      placeholder="Phone"
+                      required=""
+                    />
+                  </div>
+
+                  <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                    <input
+                      id="subject"
+                      type="text"
+                      name="sub"
+                      placeholder="Subject"
+                      required=""
+                    />
+                  </div>
+
+                  <div
+                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group"
+                  >
+                    <textarea name="message" placeholder="Message" id="message"></textarea>
+                  </div>
+
+                  <div
+                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group"
+                  >
+                    <button
+                      class="btn btn-second"
+                      type="submit"
+                      name="submitcontact"
+                    >
+                      Submit Now
+                      <span> <i class="fa-solid fa-arrow-right-long"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--End Contact Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
+<Script>
+  $('.owl-carousel').owlCarousel({ rtl:false, loop:true, margin:10,
+  responsiveClass:true, responsive:{ 0:{ items:1, nav:true }, 600:{ items:1,
+  nav:false }, 1000:{ items:1, nav:true, loop:false } } })
+</Script>
+
+<%- include("partials/footer-end") %>
