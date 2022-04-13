@@ -61,7 +61,15 @@ app.get("/services/information-technology", (req, res) => {
   res.render("information-technology");
 });
 
-const PORT = process.env.PORT || 3000;
+app.post("/career/sent-email", (req,res) => {
+  res.send("mail sent");
+})
+
+app.post("/career/sent-email", (req,res) => {
+  res.send("mail sent");
+})
+
+const PORT = process.env.PORT || 5500;
 
 app.listen(PORT, () => {
   console.log("Server started at port 3000");
