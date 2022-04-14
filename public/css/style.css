@@ -348,7 +348,7 @@ ul li {
   @media only screen and (max-width: 1200px) {
     .scope-block .inner-box {
       border: 1px solid rgba(255, 255, 255, 0.2) !important;
-      padding: 3rem 2rem; } }
+      padding: 3rem 1rem; } }
   @media only screen and (max-width: 576px) {
     .scope-block .inner-box {
       border: 1px solid rgba(255, 255, 255, 0.2) !important;
