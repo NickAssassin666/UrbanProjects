@@ -30,7 +30,7 @@
                     <div class="info-content">
                       <h3>Address:</h3>
                       <p class="info-para">
-                        P.O.Box: 295747, Riyadh 11351, KSA
+                        3446 Al-Abtah Al-Nazim District Riyadh 8330 14814, KSA
                       </p>
                     </div>
                   </div>
@@ -65,29 +65,29 @@
               <div class="container">
                 <div class="owl-carousel owl-theme">
                   <div class="item">
-                    <h3 class="contact-carousel-title">Abdul Rahman</h3>
+                    <h3 class="contact-carousel-title">Abdul Rahman Alanazi</h3>
                     <h4 class="contact-carousel-occupation">
-                      Project Engineer
+                      General Manager
                     </h4>
 
                     <div class="carousel-email-box">
                       <i class="fa-solid fa-envelope"></i>
                       <div class="contact-carousel-email">
-                        admin@uproksa.com
+                        a.alanazi@uproksa.com
                       </div>
                     </div>
 
                     <div class="carousel-number-box">
                       <i class="fa-solid fa-phone"></i>
                       <div class="contact-carousel-number">
-                        +966 12 3456 789
+                        +966 53 3423 344
                       </div>
                     </div>
                   </div>
                   <div class="item">
-                    <h3 class="contact-carousel-title">Abdul Rahman</h3>
+                    <h3 class="contact-carousel-title">Contact Us</h3>
                     <h4 class="contact-carousel-occupation">
-                      Project Engineer
+                      ---
                     </h4>
 
                     <div class="carousel-email-box">
@@ -98,32 +98,13 @@
                     </div>
 
                     <div class="carousel-number-box">
-                      <i class="fa-solid fa-phone"></i>
-                      <div class="contact-carousel-number">
-                        +966 12 3456 789
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <h3 class="contact-carousel-title">Abdul Rahman</h3>
-                    <h4 class="contact-carousel-occupation">
-                      Project Engineer
-                    </h4>
-
-                    <div class="carousel-email-box">
                       <i class="fa-solid fa-envelope"></i>
-                      <div class="contact-carousel-email">
-                        admin@uproksa.com
-                      </div>
-                    </div>
-
-                    <div class="carousel-number-box">
-                      <i class="fa-solid fa-phone"></i>
                       <div class="contact-carousel-number">
-                        +966 12 3456 789
+                        info@uproksa.com
                       </div>
                     </div>
                   </div>
+                  
                 </div>
               </div>
             </section>
@@ -136,8 +117,9 @@
           <div class="inner-column">
             <!-- Contact Form -->
             <div class="career-form contact-form">
+              <p><%= msg %></p>
               <!--Default Form-->
-              <form method="POST" action="/contact/sent-email" id="contact-form">
+              <form method="POST" action="/contact" id="contact-form">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6 col-md-6 form-group">
                     <input
@@ -151,7 +133,7 @@
 
                   <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                     <input
-                    id="from-email"
+                      id="email"
                       type="email"
                       name="email"
                       placeholder="E-Mail"
@@ -173,7 +155,7 @@
                     <input
                       id="subject"
                       type="text"
-                      name="sub"
+                      name="subject"
                       placeholder="Subject"
                       required=""
                     />
@@ -182,7 +164,11 @@
                   <div
                     class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group"
                   >
-                    <textarea name="message" placeholder="Message" id="message"></textarea>
+                    <textarea
+                      name="message"
+                      placeholder="Message"
+                      id="message"
+                    ></textarea>
                   </div>
 
                   <div

@@ -117,10 +117,10 @@ ul li {
   background-image: linear-gradient(180deg, white 0%, white 90%, #00a89f 90%, #00a89f 100%) !important;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
   width: 100%; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 992px) {
     .navbar-nav {
-      margin: 1rem 0 2rem !important; } }
-  @media only screen and (max-width: 576px) {
+      margin: 2rem 0 4rem !important; } }
+  @media only screen and (max-width: 992px) {
     .navbar-nav .nav-item:not(:last-child) {
       border-bottom: 1px solid rgba(0, 168, 159, 0.3); } }
   .navbar .navbar-light .navbar-toggler {
@@ -151,7 +151,10 @@ ul li {
   background-color: #00a89f;
   transition: all 0.2s; }
   .dropdown-menu li a.dropdown-item {
-    color: white !important; }
+    color: white !important;
+    transition: all 0.2s; }
+  .dropdown-menu .dropdown-toggler {
+    transition: all 0.2s; }
 
 .header-logo__img {
   width: 22rem;
@@ -178,7 +181,7 @@ ul li {
     bottom: 0;
     border-radius: 10px;
     transition: all 0.4s; }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 992px) {
       .navbar .nav-item .nav-link:before {
         display: none; } }
   .navbar .nav-item .nav-link:hover::before, .navbar .nav-item .nav-link:active::before {
@@ -669,10 +672,23 @@ ul li {
 
 .main-title {
   font-weight: 700;
-  margin-top: 3.5rem; }
+  margin-top: 3.5rem;
+  animation: moveDown 0.4s ease-in-out;
+  transition: animation 0.2s; }
   @media only screen and (max-width: 576px) {
     .main-title {
       font-size: 1.4rem; } }
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    opacity: 0.8;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
 
 .about-overview {
   padding: 5rem 0; }
@@ -1116,3 +1132,66 @@ ol {
 @media only screen and (max-width: 576px) {
   aside.sidebar.card {
     margin-top: 2rem !important; } }
+
+#scroll {
+  display: none;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 99;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #00a89f;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  color: white !important;
+  transition: all 0.3s; }
+  #scroll i {
+    padding: 0 0.5rem; }
+
+#scroll:hover {
+  background-color: #003d7f; }
+
+.whatsapp-cta {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 99;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #00a89f;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  color: white !important;
+  transition: all 0.3s; }
+  .whatsapp-cta:hover {
+    background-color: #003d7f; }
+  .whatsapp-cta i {
+    padding: 0 0.5rem; }
+
+@media only screen and (max-width: 1200px) {
+  #scroll,
+  .whatsapp-cta {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 576px) {
+  #scroll,
+  .whatsapp-cta {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 576px) {
+  #scroll {
+    bottom: 0.5rem;
+    left: 0.5rem !important; } }

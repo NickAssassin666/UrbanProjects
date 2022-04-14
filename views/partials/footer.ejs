@@ -4,16 +4,14 @@
       <div class="col-md-12 col-lg-4 mb-3">
         <div class="footer-widget">
           <img class="footer-logo mb-4" src="/images/footer-logo.svg" alt="" />
-          <p class="footer-address">P.O.Box: 295747, Riyadh 11351, KSA</p>
+          <p class="footer-address">3446 Al-Abtah Al-Nazim District Riyadh 8330 14814, KSA</p>
           <div class="footer-contact mt-2">
             <div class="row footer-contacts">
               <div class="col-6 mb-2">
-                <p>+966 12 3456 789</p>
-                <p>+966 12 3456 789</p>
+                <p>admin@uproksa.com</p>
               </div>
               <div class="col-6 mb-2">
-                <p>+966 12 3456 789</p>
-                <p>admin@uproksa.com</p>
+                <p>info@uproksa.com</p>
               </div>
             </div>
           </div>
@@ -32,18 +30,36 @@
           <div class="row">
             <div class="column col-md-6 col-sm-6 col-xs-12">
               <ul class="links">
-                <li><a href="/services/manpower-supplies">Manpower Supplies</a></li>
-                <li><a href="/services/rental-equipment-service">Rental Equipment service</a></li>
+                <li>
+                  <a href="/services/manpower-supplies">Manpower Supplies</a>
+                </li>
+                <li>
+                  <a href="/services/rental-equipment-service"
+                    >Rental Equipment service</a
+                  >
+                </li>
                 <li><a href="/services/trading">Trading</a></li>
-                <li><a href="/services/general-contracting">General Contracting</a></li>
+                <li>
+                  <a href="/services/general-contracting"
+                    >General Contracting</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="column col-md-6 col-sm-6 col-xs-12">
               <ul class="links">
                 <li><a href="/services/transportation">Transportation</a></li>
-                <li><a href="/services/office-supplies">Office supplies </a></li>
-                <li><a href="/services/catering-service">Catering service </a></li>
-                <li><a href="/services/information-technology">Information Technology</a></li>
+                <li>
+                  <a href="/services/office-supplies">Office supplies </a>
+                </li>
+                <li>
+                  <a href="/services/catering-service">Catering service </a>
+                </li>
+                <li>
+                  <a href="/services/information-technology"
+                    >Information Technology</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -78,7 +94,7 @@
       <div class="copyright">
         Copyright © 2022 <a href="#">URBAN PROJECTS</a>
         <!-- <a href="#"></a> -->
-         All rights reserved.
+        All rights reserved.
       </div>
     </div>
   </div>
@@ -114,4 +130,28 @@
       .removeClass("sidebar-active");
     $(this).parent("li").addClass("sidebar-active");
   });
+
+  mybutton = document.getElementById("scroll");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 </script>

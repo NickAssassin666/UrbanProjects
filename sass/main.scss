@@ -117,7 +117,8 @@ a {
     width: 100%;
   }
 
-  &:hover,&:active{
+  &:hover,
+  &:active {
     transform: translateY(-3px) scale(1.01);
     color: #e9e7e7;
   }
@@ -163,12 +164,12 @@ ul li {
   width: 100%;
 
   &-nav {
-    @media only screen and (max-width: 576px) {
-      margin: 1rem 0 2rem !important;
+    @media only screen and (max-width: 992px) {
+      margin: 2rem 0 4rem !important;
     }
 
     & .nav-item {
-      @media only screen and (max-width: 576px) {
+      @media only screen and (max-width: 992px) {
         &:not(:last-child) {
           border-bottom: 1px solid rgba($color-secondary, 0.3);
         }
@@ -223,6 +224,11 @@ ul li {
 
   li a.dropdown-item {
     color: white !important;
+    transition: all 0.2s;
+  }
+
+  .dropdown-toggler {
+    transition: all 0.2s;
   }
 }
 
@@ -256,7 +262,7 @@ ul li {
     border-radius: 10px;
     transition: all 0.4s;
 
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 992px) {
       display: none;
     }
   }
@@ -379,7 +385,7 @@ ul li {
   }
 }
 
-h1.heading__title{
+h1.heading__title {
   @media only screen and (max-width: 1400px) {
     font-size: 1.9rem !important;
   }
@@ -909,6 +915,26 @@ h1.heading__title{
   margin-top: 3.5rem;
   @media only screen and (max-width: 576px) {
     font-size: 1.4rem;
+  }
+
+  animation: moveDown 0.4s ease-in-out;
+  transition: animation 0.2s;
+
+  @keyframes moveDown {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+
+    80% {
+      opacity: 0.8;
+      transform: translateX(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
   }
 }
 
@@ -1535,6 +1561,76 @@ aside.sidebar.card {
   }
 }
 
-.brochure-box {
-  // background-color: #fff;
+#scroll {
+  display: none;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 99;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: $color-secondary;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  color: white !important;
+  transition: all 0.3s;
+
+  & i {
+    padding: 0 0.5rem;
+  }
+}
+
+#scroll:hover {
+  background-color: $color-primary;
+}
+
+.whatsapp-cta {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 99;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: $color-secondary;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+  color: white !important;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-primary;
+  }
+
+  & i {
+    padding: 0 0.5rem;
+  }
+}
+
+#scroll,
+.whatsapp-cta {
+  @media only screen and (max-width: 1200px) {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+
+#scroll {
+  @media only screen and (max-width: 576px) {
+    bottom: 0.5rem;
+    left: 0.5rem !important;
+  }
 }
