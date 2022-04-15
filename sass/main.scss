@@ -389,6 +389,10 @@ h1.heading__title {
   @media only screen and (max-width: 1400px) {
     font-size: 1.9rem !important;
   }
+
+  @media only screen and (max-width: 576px) {
+    font-size: 1.3rem !important;
+  }
 }
 
 .sm-hide {
@@ -591,6 +595,7 @@ h1.heading__title {
 }
 
 .contacts {
+  & > *{display: none;}
   h4 {
     @media only screen and (max-width: 576px) {
       font-size: 0.8rem;

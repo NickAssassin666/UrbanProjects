@@ -276,6 +276,10 @@ ul li {
     font-size: 1.9rem !important; } }
 
 @media only screen and (max-width: 576px) {
+  h1.heading__title {
+    font-size: 1.3rem !important; } }
+
+@media only screen and (max-width: 576px) {
   .sm-hide {
     display: none; } }
 
@@ -420,6 +424,9 @@ ul li {
 
 .about-one__cta {
   color: #777777; }
+
+.contacts > * {
+  display: none; }
 
 @media only screen and (max-width: 576px) {
   .contacts h4 {
