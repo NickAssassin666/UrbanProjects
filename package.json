@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node" : "14.x"
+  },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss public/css/style.css -w",
     "devserver": "live-server",
