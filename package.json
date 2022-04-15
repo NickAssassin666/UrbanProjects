@@ -12,7 +12,6 @@
     "start:css": "npm-run-all --parallel watch:sass devserver",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
@@ -30,7 +29,6 @@
   "homepage": "https://github.com/NickAssassin666/Urban-Projects#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
-    "bootstrap": "^5.1.3",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
